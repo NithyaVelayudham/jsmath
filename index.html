@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Maths</title>
+
+    <!--BSP_3 CSS Links-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!--BSP_4 CSS Links-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    <!--BSP_5 CSS Links-->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--icon Links-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+
+</head>
+<body>
+ <div class="container py-5 my-5 bg-info ">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="form text-center">
+<h1 class="display-2 fw-bold">JavaScript Math Object</h1>
+<!--string property part-1-->
+<h2 class="fw-bold mt-5">Math Methods</h2>
+<div class="text mt-5 border p-5 bg-primary">
+<!--first string-->
+    <div class="row">
+        <label class="col-sm-4 label">Enter the String&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+        <div class="col-sm-8">
+<input type="text" class="form-control text-center" id="num1"
+placeholder="Enter the string">
+</div>
+    </div>
+<!--result of string-->
+        <p id="demo"></p>
+
+   
+<!--buttons & dropdowns-->
+<div class="dropdown mt-5">
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <a class="btn btn-success dropdown-toggle text-center" 
+            data-toggle="dropdown" href="#">Option</a>
+<ul class="dropdown-menu bg-info">
+<li><a class="dropdown-item" onclick="round()" href="#">
+    Round</a></li>
+<li><a class="dropdown-item" onclick="ceil()" href="#">
+        Ceil</a></li>
+<li><a class="dropdown-item" onclick="floor()" href="#">
+        Floor</a></li>
+        <li><a class="dropdown-item" onclick="trunc()" href="#">
+            Trunc</a></li>
+            <li><a class="dropdown-item" onclick="sign()" href="#">
+           Sign</a></li>
+ <li><a class="dropdown-item" onclick="sqrt()" href="#">
+    Sqrt</a></li>
+    <li><a class="dropdown-item" onclick="abs()" href="#">
+        Abs</a></li>
+    <li><a class="dropdown-item" onclick="min()" href="#">
+        Min</a></li>
+        <li><a class="dropdown-item" onclick="max()" href="#">
+ Max</a></li>
+ <li><a class="dropdown-item" onclick="log()" href="#">
+    Log</a></li>
+    <li><a class="dropdown-item" onclick="log2()" href="#">
+        Log2</a></li>
+        <li><a class="dropdown-item" onclick="log10()" href="#">
+ Log10</a></li>
+</ul>
+</div>
+<div class="col-md-6">
+    <a class="btn btn-danger text-center"id="res" onclick="reset()">clear</a>  
+  </div>
+</div>
+</div>
+</div>
+</div><!--part1-->
+
+<!--math methods part-2-->
+<h2 class="fw-bold mt-5">JavaScript math object</h2>
+<div class="array mt-5 border p-5 bg-primary">
+<!--first string-->
+<div class="row">
+    <label class="col-sm-4 label">Enter the string&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+    <div class="col-md-8">
+<input type="text" class="form-control text-center" id="num2"
+placeholder="Enter the string">
+</div>
+</div>
+<br>
+<!--second string-->
+<div class="row">
+    <label class="col-sm-4 label">Enter the string&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+    <div class="col-md-8">
+<input type="text" class="form-control text-center" id="num3"
+placeholder="Enter the string">
+</div>
+</div>
+<!--result of string-->
+<p id="demo1"></p>
+<!--buttons & dropdowns-->
+<div class="dropdown mt-5 ">
+    <div class="row mt-5 ">
+        <div class="col-md-6 ">
+            <a class="btn btn-success dropdown-toggle text-center" 
+            data-toggle="dropdown" href="#">Option</a>
+<ul class="dropdown-menu bg-info">
+<li><a class="dropdown-item" onclick="pow()" href="#">
+    Pow</a></li>
+<li><a class="dropdown-item" onclick="sin()" href="#">
+        Sin</a></li>
+<li><a class="dropdown-item" onclick="cos()" href="#">
+    Cos</a></li>
+</ul>
+</div>
+<div class="col-md-6">
+    <a class="btn btn-danger text-center"id="res" onclick="reset()">clear</a>  
+  </div>
+</div>
+</div>
+</div>
+</div><!--part2-->
+                </div></div></div></div>
+
+
+
+   
+    <!--js link-->
+ <script src="script.js"></script>
+
+
+ <!--BSP_3 Js Script Links-->
+     <!-- Latest compiled and minified JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+     <!--BSP_4 Js Script Links-->
+     <!-- jQuery library -->
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+     <!-- Popper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+     <!-- Latest compiled JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+     
+     <!--BSP_5 Js Script Links-->
+     <!-- Latest compiled JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
